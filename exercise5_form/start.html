@@ -9,11 +9,66 @@
     />
     <title>HTML Lesson</title>
     <style>
-      label {
+      label:not([for="pro_plan"]) {
         display: block;
       }
     </style>
   </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label for="email_input">Email :</label>
+        <input type="email" name="email_input" id="email_input">
 
-  <body></body>
+        <label for="password_input">Password :</label>
+        <input type="password" name="password_input" id="password_input">
+
+        <label for="first_name">First Name :</label>
+        <input type="text" name="first_name" id="first_name">
+
+        <label for="last_name">Last Name :</label>
+        <input type="text" name="last_name" id="last_name">
+
+        <label for="birthday">Date of Birth :</label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label for="tel_num">Telephone Number :</label>
+        <input type="tel" name="tel_num" id="tel_num">
+      </fieldset>
+      <fieldset>
+        <legend>Plans</legend>
+        <label for="plans">Select a plan :</label>
+        <select name="plans" id="plans">
+          <option value="free_plan">Free Plan</option>
+          <optgroup label="Paid Plans">
+            <option value="premium_plan">Premium Plan - 15.99$</option>
+            <option value="artist_plan">Artist Plan -  32.99$</option>
+            <option value="boss_plan">Boss Plan - 49.99$</option>
+          </optgroup>
+        </select>
+        
+        <div>
+          <input type="checkbox" name="pro_plan" id="pro_plan">
+          <label for="pro_plan">Pro Plan!</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Card Details :</legend>
+
+        <label for="credit-card-number">Credit Card Number :</label>
+        <input type="number" name="credit-card-number" id="credit-card-number">
+
+        <label for="cvc">CVC :</label>
+        <input type="number" name="cvc" id="cvc">
+
+        <label for="expiration_card">Expiration Date :</label>
+        <input type="month" name="expiration_card" id="expiration_card">
+
+        <label for="billing_address">Billing Address :</label>
+        <input type="text" name="billing_address" id="billing_address">
+      </fieldset>
+    </form>
+  </body>
 </html>

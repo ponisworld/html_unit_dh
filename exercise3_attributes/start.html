@@ -11,16 +11,27 @@
   </head>
   <body>
     <!-- Here's my code -->
-    <button disabled="disabled">Disabled!</button>
-    <div>
+    <fieldset>
+      <legend>Disabled Button</legend>
+      <button disabled>Disabled!</button>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Type Number Input</legend>
       <label for="number_input">Select a number :</label>
-      <input autofocus type="number" name="number_input" step="2" min="0" max="100">
-    </div>
-    <div>
+      <input autofocus type="number" name="number_input" id="number_input" step="2" min="0" max="100">
+    </fieldset>
+
+    <fieldset>
+      <legend>Type Checkbox Input</legend>
       <label for="checkbox_input">Checkbox :</label>
-      <input type="checkbox" name="checkbox_input" checked>
-    </div>
-    <input type="date" name="date_input">
+      <input type="checkbox" name="checkbox_input" id="checkbox_input" checked>
+    </fieldset>
+
+    <fieldset>
+      <legend>Type Date Input</legend>
+      <input type="date" name="date_input">
+    </fieldset>
     <!-- Here finishes my code -->
   </body>
 </html>
